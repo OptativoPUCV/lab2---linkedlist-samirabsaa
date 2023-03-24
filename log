@@ -24,3 +24,14 @@ list.c:32:9: error: variable ‘aux’ set but not used [-Werror=unused-but-set-
 cc1: all warnings being treated as errors
 Compilation failed
 befe45a
+Fri 24 Mar 2023 11:24:22 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:29,
+                 from test.c:4:
+list.c: In function ‘createList’:
+list.c:33:7: error: incompatible types when assigning to type ‘List’ {aka ‘struct List’} from type ‘void *’
+   33 | *aux= NULL;
+      |       ^~~~
+Compilation failed
+696513a
