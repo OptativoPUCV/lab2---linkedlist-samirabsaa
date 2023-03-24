@@ -60,7 +60,6 @@ void * nextList(List * list) {
 
 void * lastList(List * list) {
   if(!list->tail)return NULL; 
-  if(list->tail)return NULL; 
   if(!list->current)return NULL; 
   list->current = list->tail; 
     return (list->current->data); 
