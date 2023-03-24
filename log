@@ -13,3 +13,14 @@ list.c:32:9: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 24724bf
+Fri 24 Mar 2023 11:24:11 AM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:32:9: error: variable ‘aux’ set but not used [-Werror=unused-but-set-variable]
+   32 |   List *aux = (List *) malloc(sizeof(List));
+      |         ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+befe45a
