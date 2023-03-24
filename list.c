@@ -51,8 +51,12 @@ void * firstList(List * list) {
 }
 
 void * nextList(List * list) {
+  if(list->current){
+    list->current = list->current->next; 
+  }
+  else return NULL; 
   
-    return NULL;
+    return (list->current->data);
 }
 
 void * lastList(List * list) {
