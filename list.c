@@ -40,6 +40,13 @@ List * createList() {
 }
 
 void * firstList(List * list) {
+
+  if(list->head){
+    list->current = list->head;
+  }
+  else return NULL; 
+  return(list->head->data); 
+  
     return NULL;
 }
 
