@@ -35,3 +35,9 @@ list.c:33:7: error: incompatible types when assigning to type ‘List’ {aka �
       |       ^~~~
 Compilation failed
 696513a
+Fri 24 Mar 2023 11:27:01 AM UTC: 
+ list.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+ tests:  1|5
+total_score: 10/70
+5a21ece
