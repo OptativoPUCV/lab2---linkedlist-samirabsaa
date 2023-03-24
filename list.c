@@ -118,7 +118,14 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-    return NULL;
+  //elimina nodo actual 
+  //debe apuntar al sgte del actual 
+
+  if(list->current){
+    list->current->next=list->current; 
+  }else return NULL;
+  
+  return(list->current->data); 
 }
 
 void cleanList(List * list) {
