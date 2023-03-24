@@ -73,3 +73,8 @@ list.c:71:14: error: initialization of ‘Node *’ from ‘int’ makes pointer
 cc1: all warnings being treated as errors
 Compilation failed
 fcea574
+Fri 24 Mar 2023 11:58:04 AM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|0
+84f6b43
