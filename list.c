@@ -121,9 +121,8 @@ void * popCurrent(List * list) {
   //elimina nodo actual 
   //debe apuntar al sgte del actual 
 
-  if(list->current->prev!=NULL){
+  if(list->current->prev!=NULL)
     list->current->prev->next= list->current->next; 
-  }
   else{
     list->head = list->current->next; 
   }
