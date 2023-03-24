@@ -51,8 +51,8 @@ void * firstList(List * list) {
 }
 
 void * nextList(List * list) {
-  if(list->current)return NULL;
-  if(!list->current->next)return NULL; 
+  if(!list->current)return NULL; //Saber si existe current 
+  if(!list->current->next)return NULL; //saber si existe un next dsp del current
   list->current = list->current->next; 
   
   return (list->current->data);
